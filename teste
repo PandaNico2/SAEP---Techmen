@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tela de Login</title>
+
+</head>
+
+<body>
+
+    <?php
+    $login = "isa";
+    $senha = "123";
+
+    if(isset($_POST["login"])){
+        if($_POST["login"] == $login and $_POST["senha"] == $senha){
+            echo "Login efetuado com sucesso";
+            header("Location: listar.php");
+        }else{
+            echo "Login ou senha inválido";
+        }
+    }
+
+    ?>
+<center>
+<img src="img/techman.png" alt="">
+
+    <form method="post">
+    <p>Usuario:</p>
+        <input type="text" name="login"><br>
+
+        <p>senha</p>
+        <input type="password" name="senha">
+        <br><br>
+        
+        <a href="listar.php">
+        <button type="submit">enviar</button></a>
+
+<br><br><br>
+</center>
+<p>
+Usuario: isa
+<br><br>
+Senha: 123
+</p>
+
+        
+    </form>
+
+</body>
+
+
+</html>
