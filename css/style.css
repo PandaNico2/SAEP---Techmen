@@ -1,0 +1,30 @@
+/*CSS header*/
+
+#listar\.php div#header {
+    background-color: #8bfdff70;
+    display: inline-flex;
+    width: 102%;
+    align-items: center;
+    height: 100px;
+    margin: -8px
+}
+
+#listar\.php #logout {
+    position: absolute;
+    right: -60px;
+    top: -25px
+}
+
+#listar\.php #logoHeder {
+    padding-left: 10px
+}
+
+div#header>a {
+    color: #35797d;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 50%;
+    width: 200px;
+    position: absolute;
+    right: 100px;
+}
